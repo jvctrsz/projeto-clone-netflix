@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@font-face {
+    font-family:'Bebas-Nue', sans-serif;
+    src: url(./imagens/BebasNeue.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #000;
+}
+
+/* header */
+
+header{
+    max-width: 1431px;
+    max-height:1803px;
+    margin: auto;
+    background-image: url(./imagens/banner\ 1.svg);
+    background-size: cover;
+    background-position: top center;
+    box-shadow: inset 0px 70px 40px rgba(0, 0, 0, 0.836);
+}
+
+.poster-banner{
+    /* background-image: url(./imagens/Menu.png); */
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.poster-banner a{
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+    padding: 6px;
+}
+
+.poster-banner a:hover{
+    color: #fff;
+}
+
+#font-logo{
+    color: red; 
+    font-size: 1.2em; 
+    font-family:'Bebas-Nue', sans-serif;
+    padding-right:32px;
+}
+
+.menu-nav{
+    font-family:'Inter', sans-serif;
+    flex-direction: row;
+    padding-left: 70px;
+    font-weight: bold;
+}
+
+.menu-nav-link{
+    font-size: 0.9em;
+}
+
+.menu-options{
+    color: #fff;
+    padding: 50px;
+}
+/* header end */
+
+/* title start */
+.background-container{
+    max-width: 400px;
+    padding: 70px;
+}
+
+.title-banner-container{
+    max-width: 400px;
+    max-height: 260px;
+}
+
+#img-banner-title{
+    width: 100%;
+}
+
+.p-title{
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 0.9em;
+    line-height: 25px;
+    padding: 20px 0px ;
+}
+
+.btn-link-title{
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.btn-link-title span{
+    font-size: 1.5em;
+    transform: translate(0%, 27%);
+}
+
+.btn-link-title a:nth-child(1){
+    text-decoration: none;
+    color: #000;
+    background-color: rgb(240, 238, 238);
+    font-family:'Inter', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 10px 20px ;
+    border-radius: 3px;
+    margin: 20px 15px 10px 0px;
+}
+.btn-link-title a:nth-child(2){
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(211, 211, 211, 0.288);
+    font-family:'Inter', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 10px 20px ;
+    border-radius: 3px;
+}
+
+.btn-link-title a:nth-child(1):hover{
+    background-color: #fff;
+}
+.btn-link-title a:nth-child(2):hover{
+    background-color:rgba(211, 211, 211, 0.473);
+}
+#white-space{
+    padding-top: 150px;
+    box-shadow: inset 0px -70px 70px rgba(0, 0, 0, 0.616);
+}
+
+/* title end */
+
+/*trilho my list start*/
+
+.trilho{
+    margin: 0 auto;
+    max-width: 1431px;
+    height: 200px;
+    position: relative;
+    bottom: 50px;
+}
+
+.trilho-title{
+    font-family:'Inter', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    font-size: 1.1em;
+}
+
+.wrapper-container::-webkit-scrollbar{
+    display: none;
+}
+
+.wrapper-container{
+    overflow-x:auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.trilho-container{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 20px 0px;
+}
+
+.item{
+    max-width: 280.8px;
+    padding:0px 5px ;
+    
+}
+
+.item img{
+    width: 100%;
+    padding-right:5px;
+}
+
+#next-arrow,
+#before-arrow{
+    cursor: pointer;
+    position: absolute;
+    font-size: 80px;
+    color: #fff;
+    bottom: 0;
+    top:38px;
+    padding: 50px 0;
+    background: linear-gradient(to left,transparent 0%, rgba(0, 0, 0, 0.308) 200%);
+    opacity: 0.01;
+}
+
+#next-arrow{
+    right: 0;
+    background: linear-gradient(to right,transparent 0%, rgba(0, 0, 0, 0.308) 200%);
+}
+
+#next-arrow:hover,
+#before-arrow:hover{
+ opacity: 1;
+ transition: all 350ms ease-in-out;
+}

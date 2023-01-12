@@ -210,3 +210,42 @@ header{
 /* fim do trilho */
 
 /* em alta start*/
+
+.trend-slider{
+    max-width: 1431px;
+    margin: auto;
+    position: relative;
+    height: 200px;
+}
+
+.slider-container{
+    overflow-x: hidden;
+}
+
+.slider-img{
+    display: flex;
+    align-items: center;
+}
+
+.slider-item{
+    max-width: 400px;
+    padding: 0px 10px 0px 0px;
+}
+
+.slider-item img{
+    width: 276.0px;
+}
+
+.slider-img:hover .-animacao{
+    filter: blur(1px);    
+}
+
+.-animacao:hover{
+    filter: blur(0) !important;
+}
+
+img:hover{
+    width: 350px;
+    padding: 0px 10px;
+    transition: 0.8s;
+}

@@ -33,31 +33,35 @@ controls.forEach(control => {
 })
 
 
-// const maxItems = items.length/2;
+const controles = document.querySelectorAll('.control-2');
 
-// controls.forEach(control => {
-//     control.addEventListener('click',() =>{
-//         const isBefore = 
-//         control.classList.contains('before-arrow')  
-        
-//         if(isBefore){
-//             currentItem -= 1;
-//         } else {
-//             currentItem += 1;
-//         }
+let itemSelecionado = 0;
 
-//         if(currentItem >= maxItems){
-//             currentItem = 0;
-//         }
-//         if(currentItem < 0){
-//             currentItem = maxItems -1;
-//         }
+const trendItem = document.querySelectorAll('.slider-item');
 
-//         items[currentItem].scrollIntoView({
-//             // inline:'center',
-//             behavior:'smooth'
-//         })
+const trendMax = trendItem.length;
 
-//         console.log('control', isBefore, currentItem)
-//     })
-// })
+controles.forEach(control1 =>{
+    control1.addEventListener('click', () =>{
+       const trendBefore = 
+       control1.classList.contains('trend-before')
+
+       if(trendBefore){
+        itemSelecionado -= 4;
+        } else {
+            itemSelecionado += 4;
+        }
+
+        if(itemSelecionado >= trendMax){
+            itemSelecionado = 0;
+        }
+        if(itemSelecionado < 0){
+            itemSelecionado = trendMax ;
+        }
+
+        trendItem[itemSelecionado].scrollIntoView({
+            inline: 'start',
+            behavior: 'smooth'
+        })
+    })
+})
